@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #e8f5e9);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      background: #333;
+      padding: 12px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      margin: 0 18px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #4CAF50;
+    }
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #4CAF50;
+      margin-top: 0;
+      border-bottom: 2px solid #4CAF50;
+      padding-bottom: 5px;
+    }
+    /* Education Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background: #f0f0f0;
+    }
+    tr:hover {
+      background-color: #f9f9f9;
+    }
+    /* Skills */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    .skill {
+      background: #e0f2f1;
+      color: #00695c;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    /* Projects */
+    .project {
+      margin-bottom: 15px;
+      padding: 15px;
+      background: #f9fbe7;
+      border-left: 5px solid #cddc39;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+    .project:hover {
+      transform: translateY(-3px);
+    }
+    .project a {
+      text-decoration: none;
+      color: #33691e;
+      font-weight: bold;
+    }
+    /* Contact Form */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 15px;
+    }
+    input, select, textarea, button {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      transition: border 0.2s ease;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: #4CAF50;
+      box-shadow: 0 0 4px rgba(76, 175, 80, 0.4);
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #388E3C;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #4CAF50;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Aditya Kumar Singh</h1>
+    <p>Welcome to my personal portfolio website!</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m Aditya, a budding full‑stack developer passionate about creating modern, responsive, and user‑friendly web applications. I enjoy learning new technologies and solving real‑world problems through code.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <table>
+      <tr>
+        <th>Degree</th>
+        <th>Institution</th>
+        <th>Year</th>
+        <td>Percentage</td>
+      </tr>
+      <tr>
+        <td>Bachelor of Engineering (CSE)</td>
+        <td>Chandigarh University</td>
+        <td>2023 – Present</td>
+        <td>87.6%</td>
+      </tr>
+      <tr>
+        <td>Higher Secondary (12th)</td>
+        <td>kv 3brd afs chandigarh</td>
+        <td>2020 – 2022</td>
+        <td>80.4%</td>
+      </tr>
+      <tr>
+        <td>Matriculation (10th)</td>
+        <td>kv 3brd afs chandigarh</td>
+        <td>2018 – 2020</td>
+        <td>95.6%</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">C++</div>
+      <div class="skill">Java</div>
+      <div class="skill">Python</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">SQL</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>✅ To‑Do List</h3>
+      <p>A simple to‑do list app built with HTML, CSS, and JavaScript.</p>
+      <a href="#" target="_blank">View Project</a>
+    </div>
+    <div class="project">
+      <h3>✅ Calculator</h3>
+      <p>A basic calculator with responsive design.</p>
+      <a href="#" target="_blank">View Project</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Your Email" required>
+
+      <label for="reason">Reason for Contact:</label>
+      <select id="reason">
+        <option value="hire">Hiring Opportunity</option>
+        <option value="collab">Collaboration</option>
+        <option value="query">General Query</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="5" placeholder="Your message..."></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Aditya Kumar Singh. All rights reserved.<br>
+    <a href="https://www.linkedin.com/in/aditya-kumar-singh-70a98428a/" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/Adityas82035" target="_blank">GitHub</a> |
+    <a href="https://leetcode.com/u/Aditya_Kumar_Singh_2025/" target="_blank">LeetCode</a>
+  </footer>
+
+</body>
+</html>
